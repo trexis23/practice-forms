@@ -14,21 +14,26 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
 
-  <body>
-    <h1>Login/Registration</h1>
+  <body class="flex flex-col items-center">
+    <h1 class="my-4 text-3xl font-bold text-red-400">Login/Registration</h1>
 
-    <form>
+    <form class="flex w-80 flex-col items-center gap-3 rounded border p-4">
       <div>
         <label for="username">Username:</label>
-        <input type="text" name="" id="username" />
+        <input type="text" name="" id="username" placeholder="Username" />
       </div>
 
       <div>
         <label for="password">Password:</label>
-        <input type="text" name="" id="password" />
+        <input type="password" name="" id="password" placeholder="Password" />
       </div>
 
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        class="rounded bg-green-500 px-4 py-2 text-white transition hover:bg-black"
+      >
+        Submit
+      </button>
     </form>
   </body>
 </html>
